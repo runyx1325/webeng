@@ -1,0 +1,11 @@
+.icon{
+    margin-right: 10px;
+    font-size: 30px!important;
+    color: black;
+}
+body{
+    margin: 0rem!important;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
