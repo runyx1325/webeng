@@ -23,9 +23,15 @@
                 <div class="form-floating">
                     <input type="email" name="email" class="form-control" id="registerEmailInput" placeholder=" " required>
                     <label for="floatingInput">Email address</label>
+                    <div class="invalid-feedback">
+                        Please enter an existing email adress.
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center ">
                     <button class="clickme btn btn-primary col-6" type="submit"> Subscribe </button>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="./unsubscribe.php" class="link-primary">Unsubscribe</a>
                 </div>
             </form>
         </div>

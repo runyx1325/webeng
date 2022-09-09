@@ -1,3 +1,8 @@
+<?php
+if(!isset($_COOKIE["login"])) {
+    header("Location: http://localhost/web");
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -18,7 +23,9 @@
     <div class="d-flex container-fluid" style="background-color: #b3b3b3; height: 22px;">
     </div>
     <div class="container-fluid" id="content">
-        <h1><b>Mein Konto</b></h1>
+        <div class="text-center border-bottom border-5">
+            <h1><b>My Profile</b></h1>
+        </div>
         <?php
             include("./userdata.php");
         ?>

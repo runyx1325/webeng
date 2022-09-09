@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_COOKIE["login"])) {
+        header("Location: http://localhost/web");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -23,44 +29,59 @@
         </div>
 
         <div class="flex-row d-flex ">
-            <div class="col imgContainer d-flex flex-row justify-content-center">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="text-center">
-                        <h3><b>Black cat</b></h3>
-                    </div>
-                    <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100px">
-                        <img src="../resources/pixelartSchwarzerKater.png" style="height:100px; width:100px" alt="Klee"/>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center" onclick=addCart(1) style="border-style: solid; width: 100px; margin-top: 2rem">
-                        <span class="material-icons-outlined icon" style="margin-right: 0!important;">add_shopping_cart</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col imgContainer d-flex flex-row justify-content-center">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="text-center">
-                        <h3><b>Swiss neutrality</b></h3>
-                    </div>
-                    <div style="height: 100px">
-                        <img src="../resources/schweizerFlagge.jpg" style="height:100px; width:100px" alt="Klee" />
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center" onclick=addCart(2) style="border-style: solid; width: 100px; margin-top: 2rem">
-                        <span class="material-icons-outlined icon" style="margin-right: 0!important;">add_shopping_cart</span>
+            <div class="col d-flex flex-row justify-content-center">
+                <div class="card">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center" style="margin-bottom: 2rem; margin-top: 1rem">
+                            <h3><b>Black cat</b></h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100px">
+                            <img src="../resources/pixelartSchwarzerKater.png" style="height:100px; width:100px" alt="Klee"/>
+                        </div>
+                        <div class="text-center" style="color: grey;font-size: 22px; margin-top: 2rem">
+                            $0.00
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center" onclick=addCart(1) style="border-style: solid; width: 150px; margin-top: 2rem; cursor: pointer; margin-bottom: 2rem">
+                            <span class="material-icons-outlined icon" style="margin-right: 0!important;">add_shopping_cart</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col imgContainer d-flex flex-row justify-content-center">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="text-center">
-                        <h3><b>Shamrock</b></h3>
+            <div class="col d-flex flex-row justify-content-center">
+                <div class="card">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center" style="margin-bottom: 2rem; margin-top: 1rem">
+                            <h3><b>Swiss neutrality</b></h3>
+                        </div>
+                        <div style="height: 100px">
+                            <img src="../resources/schweizerFlagge.jpg" style="height:100px; width:100px" alt="Klee" />
+                        </div>
+                        <div class="text-center" style="color: grey;font-size: 22px; margin-top: 2rem">
+                            $0.00
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center" onclick=addCart(2) style="border-style: solid; width: 150px; margin-top: 2rem; cursor: pointer; margin-bottom: 2rem">
+                            <span class="material-icons-outlined icon" style="margin-right: 0!important;">add_shopping_cart</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="../resources/pixelartGluecksklee.png" style="height:100px; width:100px" alt="Klee" />
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center" onclick=addCart(3) style="border-style: solid; width: 100px; margin-top: 2rem">
-                        <span class="material-icons-outlined icon" style="margin-right: 0!important;">add_shopping_cart</span>
+                </div>
+            </div>
+
+            <div class="col d-flex flex-row justify-content-center">
+                <div class="card">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center" style="margin-bottom: 2rem; margin-top: 1rem">
+                            <h3><b>Shamrock</b></h3>
+                        </div>
+                        <div>
+                            <img src="../resources/pixelartGluecksklee.png" style="height:100px; width:100px" alt="Klee" />
+                        </div>
+                        <div class="text-center" style="color: grey;font-size: 22px; margin-top: 2rem">
+                            $0.00
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center" onclick=addCart(3) style="border-style: solid; width: 150px; margin-top: 2rem; margin-bottom: 2rem; cursor: pointer">
+                            <span class="material-icons-outlined icon" style="margin-right: 0!important;">add_shopping_cart</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,3 +91,13 @@
     </div>
 </body>
 </html>
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+    }
+</style>
