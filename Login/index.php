@@ -33,7 +33,8 @@
         </form>
       </div>
   </div>
-  <div class="footer position-absolute bottom-0 d-flex container-fluid" style="background-color: #b3b3b3; height: 100px;" >
+  <div class="footer position-absolute bottom-0 d-flex container-fluid justify-content-center align-items-center d-flex" style="background-color: #b3b3b3; height: 100px;" >
+      <a class="link-primary" style="margin-right: 1rem" href="http://localhost/web/impressum">Impressum</a>
   </div>
 </body>
 </html>

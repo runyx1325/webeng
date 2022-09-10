@@ -16,11 +16,12 @@
     ?>
     <div class="d-flex container-fluid" style="background-color: #b3b3b3; height: 22px;">
     </div>
-    <div class="container-fluid" id="content">
+    <div class="container-fluid" style="height: calc(100vh - 200px)!important; " id="content">
         <form onsubmit="return logout()" id="logout">
             <button class="clickme btn btn-primary" type="submit"> Logout </button>
     </div>
-    <div class="footer position-absolute bottom-0 d-flex container-fluid" style="background-color: #b3b3b3; height: 100px;" >
+    <div class="footer position-absolute bottom-0 d-flex container-fluid justify-content-center align-items-center d-flex" style="background-color: #b3b3b3; height: 100px;" >
+        <a class="link-primary" style="margin-right: 1rem" href="http://localhost/web/impressum">Impressum</a>
     </div>
 </body>
 </html>

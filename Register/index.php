@@ -17,7 +17,7 @@
     ?>
     <div class="d-flex container-fluid" style="background-color: #b3b3b3; height: 22px;">
     </div>
-    <div class="container d-flex align-items-center justify-content-center" id="content">
+    <div class="container d-flex align-items-center justify-content-center" style="height: calc(100vh - 200px)!important; " id="content">
         <form class="row g-3 col-6 needs validation" novalidate onsubmit="return register()" id="registerData">
                 <h3><b>Register</b></h3>
                 <div class="form-floating">
@@ -65,7 +65,8 @@
             </form>
         </div>
     </div>
-    <div class="footer position-absolute bottom-0 d-flex container-fluid" style="background-color: #b3b3b3; height: 100px;" >
+    <div class="footer position-absolute bottom-0 d-flex container-fluid justify-content-center align-items-center d-flex" style="background-color: #b3b3b3; height: 100px;" >
+        <a class="link-primary" style="margin-right: 1rem" href="http://localhost/web/impressum">Impressum</a>
     </div>
 </body>
 </html>

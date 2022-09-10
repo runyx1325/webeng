@@ -17,11 +17,16 @@
     ?>
     <div class="d-flex container-fluid" style="background-color: #b3b3b3; height: 22px;">
     </div>
-    <div class="content" id="content">
-        <h1>Home</h1>
+    <div class="content" style="height: calc(100vh - 200px)!important; " id="content">
+        <div class="text-center border-bottom border-5" style="margin-bottom: 2rem">
+            <h1><b>Welcome</b></h1>
+        </div>
     </div>
-    <div class="footer position-absolute bottom-0 d-flex container-fluid" style="background-color: #b3b3b3; height: 100px;" >
+    <div class="footer position-absolute bottom-0 d-flex container-fluid justify-content-center align-items-center d-flex" style="background-color: #b3b3b3; height: 100px;" >
+        <a class="link-primary" style="margin-right: 1rem" href="http://localhost/web/impressum">Impressum</a>
     </div>
-
 </body>
+<footer>
+
+</footer>
 </html>

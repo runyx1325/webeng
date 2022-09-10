@@ -15,13 +15,15 @@
     <?php
         include("../NavLog.php");
     ?>
-    <div class="d-flex container-fluid" style="background-color: #b3b3b3; height: 22px;"></div>
+    <div class="d-flex container-fluid" style="background-color: #b3b3b3; height: 22px;">
+
+    </div>
     <div class="container d-flex align-items-center justify-content-center " style="height: calc(100vh - 200px)!important; " id="content">
         <div class="col-4">
             <form class="row g-3 col-12 needs validation d-flex align-items-center justify-content-center" novalidate onsubmit="return newsletter()" id="emailNewsletter">
                 <h2 class="text-center"><b>Newsletter</b></h2>
                 <div class="form-floating">
-                    <input type="email" name="email" class="form-control" id="registerEmailInput" placeholder=" " required>
+                    <input type="email" name="email" class="form-control" id="newsletterEmailInput" placeholder=" " required>
                     <label for="floatingInput">Email address</label>
                     <div class="invalid-feedback">
                         Please enter an existing email adress.
@@ -36,7 +38,8 @@
             </form>
         </div>
     </div>
-    <div class="container d-flex align-items-center justify-content-center" id="content">
-    <div class="footer position-absolute bottom-0 d-flex container-fluid" style="background-color: #b3b3b3; height: 100px;" ></div>
+    <div class="footer position-absolute bottom-0 d-flex container-fluid justify-content-center align-items-center d-flex" style="background-color: #b3b3b3; height: 100px;" >
+        <a class="link-primary" style="margin-right: 1rem" href="http://localhost/web/impressum">Impressum</a>
+    </div>
 </body>
 </html>
